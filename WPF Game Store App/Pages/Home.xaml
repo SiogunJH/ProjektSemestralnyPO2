@@ -24,28 +24,34 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
 
             <Button Grid.Column="0" Grid.Row="0" Click="ButtonNotImplemented" Style="{StaticResource navButtonHighlight}">Home</Button>
-            <Button Grid.Column="0" Grid.Row="1" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Video Games</Button>
-            <Button Grid.Column="0" Grid.Row="2" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Board Games</Button>
-            <Button Grid.Column="0" Grid.Row="3" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Tables</Button>
+            <Button Grid.Column="0" Grid.Row="1" Click="ButtonNotImplemented" Style="{StaticResource navButtonCategory}">Video Games</Button>
+            <Button Grid.Column="0" Grid.Row="2" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Browse</Button>
+            <Button Grid.Column="0" Grid.Row="3" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Rent</Button>
+            <Button Grid.Column="0" Grid.Row="4" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Buy</Button>
+            <Button Grid.Column="0" Grid.Row="5" Click="ButtonNotImplemented" Style="{StaticResource navButtonCategory}">Board Games</Button>
+            <Button Grid.Column="0" Grid.Row="6" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Browse</Button>
+            <Button Grid.Column="0" Grid.Row="7" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Rent</Button>
+            <Button Grid.Column="0" Grid.Row="8" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Buy</Button>
+            <Button Grid.Column="0" Grid.Row="9" Click="ButtonNotImplemented" Style="{StaticResource navButtonCategory}">About</Button>
+            <Button Grid.Column="0" Grid.Row="10" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Address</Button>
         </Grid>
 
         <!-- RIGHT COLUMN -->
         <Grid Grid.Column="1">
             <Grid.Background>
-                <ImageBrush ImageSource="./../Images/CafeInterior.png" Opacity="0.75" Stretch="UniformToFill"/>
+                <ImageBrush ImageSource="./../Images/CafeInterior.png" Opacity="0.70" Stretch="UniformToFill"/>
             </Grid.Background>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
         </Grid>
     </Grid>
 </Page>

@@ -19,8 +19,58 @@
             
             <Setter Property="Button.HorizontalAlignment" Value="Center" />
             <Setter Property="Button.VerticalAlignment" Value="Center" />
+
+            <Setter Property="Button.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        SnapsToDevicePixels="True">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      Margin="{TemplateBinding Padding}"
+                                      RecognizesAccessKey="True"
+                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
-        
+
+        <!-- Button Category Navigation Style -->
+        <Style x:Key="navButtonCategory">
+            <Setter Property="Button.Height" Value="30"/>
+            <Setter Property="Button.Width" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type FrameworkElement}}, Path=ActualWidth}"/>
+            <Setter Property="Button.Margin" Value="0,0,0,0"/>
+            <Setter Property="Button.BorderThickness" Value="0,0,0,0"/>
+
+            <Setter Property="Button.Background" Value="#5dade2" />
+            <Setter Property="Button.Foreground" Value="#FFFFFF" />
+            <Setter Property="Button.FontSize" Value="18" />
+            <Setter Property="Button.FontWeight" Value="Normal" />
+
+            <Setter Property="Button.HorizontalAlignment" Value="Center" />
+            <Setter Property="Button.VerticalAlignment" Value="Center" />
+
+            <Setter Property="Button.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        SnapsToDevicePixels="True">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      Margin="{TemplateBinding Padding}"
+                                      RecognizesAccessKey="True"
+                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <!-- Button Navigation Style -->
         <Style x:Key="navButton">
             <Setter Property="Button.Height" Value="30"/>
