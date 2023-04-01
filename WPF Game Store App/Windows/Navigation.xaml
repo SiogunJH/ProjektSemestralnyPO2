@@ -9,6 +9,7 @@
         Height="500" 
         Width="1000" 
         Source="./../Pages/Home.xaml"
+        Icon="./../Images/AppIcon.ico"
         >
 
 </NavigationWindow>
