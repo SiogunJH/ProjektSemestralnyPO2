@@ -24,5 +24,9 @@ namespace WPF_Game_Store_App.Pages
         {
             InitializeComponent();
         }
+        private void ButtonNotImplemented(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Click");
+        }
     }
 }

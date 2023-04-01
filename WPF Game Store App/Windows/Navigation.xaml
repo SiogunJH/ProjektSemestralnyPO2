@@ -5,5 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Game_Store_App.Windows"
         mc:Ignorable="d"
-        Title="Game Store" Height="500" Width="1000" Source="./../Pages/Home.xaml">
+        Title="Game Store" 
+        Height="500" 
+        Width="1000" 
+        Source="./../Pages/Home.xaml"
+        >
+
 </NavigationWindow>

@@ -4,6 +4,42 @@
              xmlns:local="clr-namespace:WPF_Game_Store_App"
              StartupUri="./Windows/Navigation.xaml">
     <Application.Resources>
-         
+        
+        <!-- Highlighted Button Navigation Style -->
+        <Style x:Key="navButtonHighlight">
+            <Setter Property="Button.Height" Value="30"/>
+            <Setter Property="Button.Width" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type FrameworkElement}}, Path=ActualWidth}"/>
+            <Setter Property="Button.Margin" Value="0,0,0,0"/>
+            <Setter Property="Button.BorderThickness" Value="0,0,0,0"/>
+            
+            <Setter Property="Button.Background" Value="#19507e" />
+            <Setter Property="Button.Foreground" Value="#FFFFFF" />
+            <Setter Property="Button.FontSize" Value="20" />
+            <Setter Property="Button.FontWeight" Value="Bold" />
+            
+            <Setter Property="Button.HorizontalAlignment" Value="Center" />
+            <Setter Property="Button.VerticalAlignment" Value="Center" />
+        </Style>
+        
+        <!-- Button Navigation Style -->
+        <Style x:Key="navButton">
+            <Setter Property="Button.Height" Value="30"/>
+            <Setter Property="Button.Width" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type FrameworkElement}}, Path=ActualWidth}"/>
+            <Setter Property="Button.Margin" Value="0,0,0,0"/>
+            <Setter Property="Button.BorderThickness" Value="0,0,0,0"/>
+
+            <Setter Property="Button.Background" Value="#85c1e9" />
+            <Setter Property="Button.Foreground" Value="#FFFFFF" />
+            <Setter Property="Button.FontSize" Value="18" />
+            <Setter Property="Button.FontWeight" Value="Normal" />
+            
+            <Setter Property="Button.HorizontalAlignment" Value="Center" />
+            <Setter Property="Button.VerticalAlignment" Value="Center" />
+        </Style>
+
+        <!-- Navigation Column Style -->
+        <Style x:Key="navColumn">
+            <Setter Property="Grid.Background" Value="#ebf5fb" />
+        </Style>
     </Application.Resources>
 </Application>

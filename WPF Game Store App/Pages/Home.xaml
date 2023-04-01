@@ -9,6 +9,43 @@
       Title="Game Store - Home">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- LEFT COLUMN -->
+        <Grid Grid.Column="0" Style="{StaticResource navColumn}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Column="0" Grid.Row="0" Click="ButtonNotImplemented" Style="{StaticResource navButtonHighlight}">Home</Button>
+            <Button Grid.Column="0" Grid.Row="1" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Video Games</Button>
+            <Button Grid.Column="0" Grid.Row="2" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Board Games</Button>
+            <Button Grid.Column="0" Grid.Row="3" Click="ButtonNotImplemented" Style="{StaticResource navButton}">Tables</Button>
+        </Grid>
+
+        <!-- RIGHT COLUMN -->
+        <Grid Grid.Column="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="./../Images/CafeInterior.png" Opacity="0.75" Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+        </Grid>
     </Grid>
 </Page>
