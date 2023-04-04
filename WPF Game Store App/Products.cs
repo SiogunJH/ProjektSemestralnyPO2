@@ -7,22 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPF_Game_Store_App.Database
+namespace WPF_Game_Store_App
 {
     using System;
     using System.Collections.ObjectModel;
     
     public partial class Products
     {
-        public int ProductID { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
-        public byte MinPlayerAmount { get; set; }
-        public byte MaxPlayerAmount { get; set; }
-        public string Description { get; set; }
-        public decimal NumForBuy { get; set; }
-        public Nullable<decimal> NumForRent { get; set; }
-        public decimal PriceForBuy { get; set; }
-        public Nullable<decimal> PriceForRent { get; set; }
     }
 }

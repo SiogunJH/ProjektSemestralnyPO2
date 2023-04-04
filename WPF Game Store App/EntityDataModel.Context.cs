@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPF_Game_Store_App.Database
+namespace WPF_Game_Store_App
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AppDatabaseEntities : DbContext
+    public partial class GameStoreDBEntities : DbContext
     {
-        public AppDatabaseEntities()
-            : base("name=AppDatabaseEntities")
+        public GameStoreDBEntities()
+            : base("name=GameStoreDBEntities")
         {
         }
     

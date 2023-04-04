@@ -8,7 +8,7 @@
         Title="Game Store" 
         Height="500" 
         Width="1000" 
-        Source="./../Pages/Home.xaml"
+        Source="./../Pages/BrowseAllVideoGames.xaml"
         Icon="./../Images/AppIcon.ico"
         >
 
